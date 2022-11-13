@@ -3,7 +3,7 @@ const int measure = A0;
 int val = 0;
 
 // pin to which the seat sensor LED is connected
-int pinLed = 13;
+int pinLed = 12;
 
 void setup() {
   // Initialization of the Serial Monitor
