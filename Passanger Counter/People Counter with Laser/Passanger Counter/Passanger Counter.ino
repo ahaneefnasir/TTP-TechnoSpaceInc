@@ -18,10 +18,11 @@ void loop() {
     counter = counter + 1;
     Serial.print("Number of passangers boarded:");
     Serial.println(counter);
-    delay(500);
+    val = analogRead(measure);
     while (val <= 900) {
       counter = counter;
       val = analogRead(measure);
+      delay(600);
     }
  }
 
@@ -29,5 +30,4 @@ void loop() {
     counter = counter;
     delay(100);
   }
-
 }
